@@ -20,15 +20,30 @@ def about():
 
 @blog_print.route('/plant')
 def plant():
-    return render_template('blogger/Plant/index.html')
+    articles = {}
+    articles['heading'] = "This is the title"
+    articles['paragraph'] = "This is the paragraph"
+    articles['link'] = 'this is the link'
+    Job = [articles]
+    return render_template('blogger/Plant/index.html',Articles= Job)
 
 @blog_print.route('/animal')
 def animal():
-    return render_template('blogger/Animal/index.html')
+    articles = {}
+    articles['heading'] = "This is the title"
+    articles['paragraph'] = "This is the paragraph"
+    articles['link'] = 'this is the link'
+    Job = [articles]
+    return render_template('blogger/Animal/index.html',Articles=Job)
 
 @blog_print.route('/cell')
 def cell():
-    return render_template('blogger/Cell/index.html')
+    articles = {}
+    articles['heading'] = "This is the title"
+    articles['paragraph'] = "This is the paragraph"
+    articles['link'] = 'this is the link'
+    Job = [articles]
+    return render_template('blogger/Cell/index.html',Articles=Job)
 
 
 #article display

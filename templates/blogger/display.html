@@ -34,32 +34,17 @@
 				<!-- Section -->
 					<section class="wrapper">
 						<div class="inner">
-							
-							<header>
-								<h2>Heading with a Subtitle</h2>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<a href="#" class="button">Read</a><hr>
+							{% for articles in Articles %}
+								<header>
+									<h2>{{articles['heading']}}</h2>
+								</header>
+								<p>{{articles.paragraph}}.</p>
+								<a href="{{articles['link']}}" class="button">Read</a><hr>
+							{% endfor %}
 							
 							
 
-							<header>
-								<h2>Heading with a Subtitle</h2>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<a href="#" class="button">Read</a><hr>
-
-							<header>
-								<h2>Heading with a Subtitle</h2>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<a href="#" class="button">Read</a><hr>
-
-							<header>
-								<h2>Heading with a Subtitle</h2>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<a href="#" class="button">Read</a><hr>
+							
 								
 							
 						</div>
