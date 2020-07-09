@@ -40,12 +40,12 @@ def programming():
     return render_template('blogger/Programming/index.html')
 
 @blog_print.route('/chemistry')
-def animal():
+def chemistry():
     
     return render_template('blogger/Chemistry/index.html')
 
 @blog_print.route('/biology')
-def cell():
+def biology():
     
     return render_template('blogger/Biology/index.html')
 
