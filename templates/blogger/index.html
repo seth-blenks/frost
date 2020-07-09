@@ -1,12 +1,8 @@
 <!DOCTYPE HTML>
-<!--
-	Urban by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
-		<title>BioTonic</title>
+		<title>Ioton</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/main.css')}}" />
@@ -15,25 +11,25 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">Bio<span>Tonic</span></a></div>
+				<div class="logo"><a href="{{url_for('blogger.homepage')}}">Bio<span>Tonic</span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="{{url_for('blogger.homepage')}}">Home</a></li>
-					<li><a href="generic.html">About</a></li>
-					<li><a href="elements.html">Terms Conditions</a></li>
-				</ul>
-			</nav>
+		<!-- Nav --> 
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="{{url_for('blogger.homepage')}}">Home</a></li>
+				<li><a href="{{url_for('blogger.about')}}">About</a></li>
+				<li><a href="{{url_for('blogger.terms_and_conditions')}}">Terms Conditions</a></li>
+			</ul>
+		</nav>
 
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
 					<header>
 						<h1>Keep Learning, Keep Growing</h1>
-						<p>Mansion<br />felis quisque a diam rutrum tempus massa accumsan faucibus purus.</p>
+						<p>Preparation<br />Cross your limitations and pave your way to success</p>
 					</header>
 					
 				</div>
@@ -49,14 +45,14 @@
 								<div class="flex flex-2">
 									<div class="col col1">
 										<div class="image round fit">
-											<a href="generic.html" class="link"><img src="{{url_for('static',filename='images/pic01.jpg')}}" alt="" /></a>
+											<a href="generic.html" class="link"><img src="{{url_for('static',filename='images/fourth.jpg')}}" alt="" /></a>
 										</div>
 									</div>
 									<div class="col col2">
-										<h3>Cellular Biology</h3>
-										<p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
-										<p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. </p>
-										<a href="{{url_for('blogger.cell')}}" class="button">Learn More</a>
+										<h3>Chemistry</h3>
+										<p>As tiny as bacteria is, it has been the cause of misery for many multicellular organisms. what makes bacteria so powerful is it's single cell nature. Bacteria can exist as a cell and still perform all life sustaining activities which include reproduction, irritability, excretion, respiration etc.</p>
+										<p>Cell is the basic unit of life. like bacteria, every orgaism is made up of cells. these cells individually perform specific activities that keeps the organism alive. The death of an oraganism starts with the death of a cell</p>
+										<a href="{{url_for('blogger.chemistry')}}" class="button">Learn More</a>
 									</div>
 								</div>
 						</div>
@@ -67,14 +63,14 @@
 						<div class="inner">
 							<div class="flex flex-2">
 								<div class="col col2">
-									<h3>Animal Biology</h3>
-									<p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
-									<p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. </p>
-									<a href="{{url_for('blogger.animal')}}" class="button">Learn More</a>
+									<h3>Biology</h3>
+									<p>The beauty of nature lies in it's diverse number of inter-dependent creatures that harness it's environment. These creatures tender, walk and maintain balance by changing from time to time the concentration of resources in the environment.</p>
+									<p>The sea, air and land depends on these creatures to maintain balance and uniformity. A great effort put by natures of creation to protect nature.</p>
+									<a href="{{url_for('blogger.biology')}}" class="button">Learn More</a>
 								</div>
 								<div class="col col1 first">
 									<div class="image round fit">
-										<a href="generic.html" class="link"><img src="{{url_for('static',filename='images/pic02.jpg')}}" alt="" /></a>
+										<a href="generic.html" class="link"><img src="{{url_for('static',filename='images/third_pic.jpg')}}" alt="" /></a>
 									</div>
 								</div>
 							</div>
@@ -88,14 +84,16 @@
                             <div class="flex flex-2">
                                 <div class="col col1">
                                     <div class="image round fit">
-                                        <a href="generic.html" class="link"><img src="{{url_for('static',filename='images/pic01.jpg')}}" alt="" /></a>
+                                        <a href="generic.html" class="link"><img src="{{url_for('static',filename='images/fifth.jpg')}}" alt="" /></a>
                                     </div>
                                 </div>
                                 <div class="col col2">
-                                    <h3>Plant Biology</h3>
-                                    <p>Etiam posuere hendrerit arcu, ac blandit nulla. Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex.</p>
-                                    <p>Sed congue malesuada nibh, a varius odio vehicula aliquet. Aliquam consequat, nunc quis sollicitudin aliquet, enim magna cursus auctor lacinia nunc ex blandit augue. Ut vitae neque fermentum, luctus elit fermentum, porta augue. Nullam ultricies, turpis at fermentum iaculis, nunc justo dictum dui, non aliquet erat nibh non ex. </p>
-                                    <a href="{{url_for('blogger.plant')}}" class="button">Learn More</a>
+                                    <h3>Programming</h3>
+									<p>The power house of the earth are the plants. plants beautify and purify the world we live in, plants provide shelter for creaeping and climbing creatures, plants control wind speed, plants provide medicine, food and cloth. plants are one of natures natural resource.</p>
+									<p>
+										The rainforest is home to millions of species. This is possible because of the vast number of plants in the rainforest. plants harness the sun's ray to produces food and energy a life saving process which all animals depend on.
+									</p>
+                                    <a href="{{url_for('blogger.programming')}}" class="button">Learn More</a>
                                 </div>
                             </div>
                     </div>
@@ -112,7 +110,7 @@
 						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
 					</ul>
-					<p>&copy; Untitled. All rights reserved. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+					<p>&copy; 2020. All rights reserved.</p>
 				</div>
 			</footer>
 

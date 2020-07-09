@@ -1,12 +1,8 @@
 <!DOCTYPE HTML>
-<!--
-	Urban by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
 	<head>
-		<title>Biotonic</title>
+		<title>Ioton</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/main.css')}}" />
@@ -15,16 +11,16 @@
 
 		<!-- Header -->
 			<header id="header">
-				<div class="logo"><a href="index.html">Bio<span>Tonic</span></a></div>
+				<div class="logo"><a href="{{url_for('blogger.homepage')}}">Bio<span>Tonic</span></a></div>
 				<a href="#menu">Menu</a>
 			</header>
 
-		<!-- Nav -->
+		<!-- Nav --> 
 		<nav id="menu">
 			<ul class="links">
 				<li><a href="{{url_for('blogger.homepage')}}">Home</a></li>
-				<li><a href="About.html">About</a></li>
-				<li><a href="Terms Conditions.html">Terms Conditions</a></li>
+				<li><a href="{{url_for('blogger.about')}}">About</a></li>
+				<li><a href="{{url_for('blogger.terms_and_conditions')}}">Terms Conditions</a></li>
 			</ul>
 		</nav>
 
@@ -34,7 +30,7 @@
 				<!-- Section -->
 					<section class="wrapper">
 						<div class="inner">
-						{% block articles %}{% endblock %}
+						{% block articles %}generate article with python article generator{% endblock %}
 						</div>
 					</section>
 
@@ -51,7 +47,7 @@
 						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
 					</ul>
-					<p>&copy; Untitled. All rights reserved. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.</p>
+					<p>&copy; 2020. All rights reserved.</p>
 				</div>
 			</footer>
 
