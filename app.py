@@ -23,4 +23,4 @@ app = create_application('config.Development',blog_print)
 
 if __name__ == '__main__':
     
-    app.run(port=8081,host='10.42.0.1')
+    app.run(port=8081,host='www.brain.com')
