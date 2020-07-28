@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3.6
 from flask import Flask,url_for
 
 
@@ -23,4 +23,4 @@ app = create_application('config.Development',blog_print)
 
 if __name__ == '__main__':
     
-    app.run(port=8081,host='www.brain.com')
+    app.run(port=8081,host='localhost')
